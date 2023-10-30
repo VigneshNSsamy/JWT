@@ -1,0 +1,32 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFqYSIsImlhdCI6MTY5ODY3MTM1MH0.sd7CbOB31qmc2njc-75TlmSPdnmVZTWX7K2PSnsvpRw
+
+
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFqYSIsImlhdCI6MTY5ODY3MTM1MH0.iZZa7gvM_43ljx-t5Iq9bdJND7UWpaVsyS79TZ0yQKA"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFqYSIsImlhdCI6MTY5ODY3MTM1MH0.iZZa7gvM_43ljx-t5Iq9bdJND7UWpaVsyS79TZ0yQKA"
+}
+
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Raja"
+}
